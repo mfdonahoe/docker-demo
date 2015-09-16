@@ -1,7 +1,6 @@
 app:
   image: ec2-52-88-72-151.us-west-2.compute.amazonaws.com/dockerdemo_app:latest
-  entrypoint: /bin/bash
-  command: -c "sleep 5 && go-wrapper run" # sleep because the postgres container isn't ready on first start
+  command: /bin/bash -c "sleep 5 && go-wrapper run" # sleep because the postgres container isn't ready on first start
   environment:
     - "TITLE=Docker Demo"
     - "DB_USER=demo"
