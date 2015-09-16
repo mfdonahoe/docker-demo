@@ -20,4 +20,4 @@ The `demo_pq` directory contains the demo application.
 
 - `docker-compose up`
 
-## Another change has been made
+## A change has been made
